@@ -47,8 +47,8 @@ server.put("/api/users/:id", (req, res) => {
     res.json(selectedUser)
 })
 
-const port = process.env.PORT || 9000
+// const port = process.env.PORT || 9000
 
-server.listen(port, () => {
+server.listen(8000, () => {
     console.log('Server is running')
 })
