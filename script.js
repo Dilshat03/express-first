@@ -46,6 +46,9 @@ server.put("/api/users/:id", (req, res) => {
     fs.writeFileSync("users.json", JSON.stringify(selectedUser , null, 2))
     res.json(selectedUser)
 })
-server.listen(8000, () => {
+
+const port = process.env.PORT || 9000
+
+server.listen(port, () => {
     console.log('Server is running')
 })
